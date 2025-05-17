@@ -1,0 +1,52 @@
+$(document).ready(function () {
+  const audio = $("#bg-audio")[0];
+  const $toggle = $("#audio-toggle");
+  const $icon = $("#audio-icon");
+  const $text = $("#audio-text");
+  const $prompt = $("#click-prompt");
+
+  // Wait for user to click anywhere
+  $(window).one("click", function () {
+    // Remove the overlay prompt
+    $prompt.fadeOut(500, () => $prompt.remove());
+
+    // Start playing the audio from beginning
+    audio.currentTime = 0;
+    audio.muted = false;
+    audio.play();
+
+    // Show toggle only inside the header
+    $toggle.removeClass("d-none");
+
+    // Handle end of audio if you want it to restart
+    audio.onended = function () {
+      audio.currentTime = 0;
+      audio.play();
+    };
+  });
+
+  // Toggle mute/unmute
+  $toggle.on("click", function () {
+    audio.muted = !audio.muted;
+    if (audio.muted) {
+      $icon.removeClass("bi-volume-up-fill").addClass("bi-volume-mute-fill");
+      $text.text("Click here to unmute");
+    } else {
+      $icon.removeClass("bi-volume-mute-fill").addClass("bi-volume-up-fill");
+      $text.text("Click here to mute");
+      audio.play();
+    }
+  });
+
+  //  ------------------------------------------------------------------------------------
+  //  ----------------------Mute audio on any scroll event---------------------------------
+  //  -------------------------------------------------------------------------------------
+
+  $(window).on("scroll", function () {
+    if (!audio.muted) {
+      audio.muted = true;
+      $icon.removeClass("bi-volume-up-fill").addClass("bi-volume-mute-fill");
+      $text.text("Click here to unmute");
+    }
+  });
+});
