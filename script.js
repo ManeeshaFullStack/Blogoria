@@ -7,18 +7,12 @@ $(document).ready(function () {
 
   // Wait for user to click anywhere
   $(window).one("click", function () {
-    // Remove the overlay prompt
     $prompt.fadeOut(500, () => $prompt.remove());
-
-    // Start playing the audio from beginning
     audio.currentTime = 0;
     audio.muted = false;
     audio.play();
-
-    // Show toggle only inside the header
     $toggle.removeClass("d-none");
 
-    // Handle end of audio if you want it to restart
     audio.onended = function () {
       audio.currentTime = 0;
       audio.play();
@@ -38,10 +32,7 @@ $(document).ready(function () {
     }
   });
 
-  //  ------------------------------------------------------------------------------------
-  //  ----------------------Mute audio on any scroll event---------------------------------
-  //  -------------------------------------------------------------------------------------
-
+  // Auto-mute on scroll
   $(window).on("scroll", function () {
     if (!audio.muted) {
       audio.muted = true;
