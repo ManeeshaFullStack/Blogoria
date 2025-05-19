@@ -41,3 +41,18 @@ $(document).ready(function () {
     }
   });
 });
+
+let navigations = $("#main-nav");
+
+$(window).on("scroll", function () {
+  if ($(this).scrollTop() > 50) {
+    navigations.addClass("bg-dark bg-gradient");
+  } else {
+    navigations.removeClass("bg-dark bg-gradient");
+  }
+});
+
+let sectionHilights = $("#hilights-section");
+sectionHilights.on("hover", function () {
+  sectionHilights.addClass("modal");
+});

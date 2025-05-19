@@ -37,7 +37,10 @@
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top shadow-sm py-2">
+    <nav
+      class="navbar navbar-expand-lg sticky-top shadow-sm py-2"
+      id="main-nav"
+    >
       <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="#">
           <svg
@@ -86,27 +89,37 @@
     </nav>
 
     <!-- Header -->
-    <header class="vh-100 d-flex align-items-center">
+    <header class="vh-100 d-flex align-items-center pb-5">
       <div class="container">
         <div class="row align-items-center h-100">
           <div class="col-md-6">
-            <div class="h-100 d-flex justify-content-end align-items-center">
+            <div
+              class="h-100 d-flex justify-content-end align-items-center"
+              id="hero-img-container"
+            >
               <img
                 src="./img/images/image-4.jpg"
                 alt="Hero image"
                 class="img-fluid rounded-5"
-                style="max-height: 80vh; object-fit: contain"
+                id="hero-img"
               />
             </div>
           </div>
-          <div class="col-md-6 d-flex flex-column justify-content-center">
-            <h1 class="display-4 mb-2 fw-bold">Welcome to Blogoria</h1>
-            <p class="text-light mb-5">
+          <div
+            class="col-12 col-md-6 d-flex flex-column justify-content-center"
+          >
+            <h1 class="mb-2 h1 fw-bold text-light" id="main-headding">
+              Welcome to Blogoria
+            </h1>
+            <p class="text-info mb-3">
               Fuel your passion. Share your voice. Master the art of blogging
             </p>
-            <p class="mb-5">
+            <p class="mb-3">
               Take your blogging journey to the next level with Blogoria — your
-              creative space to learn, write, and grow.
+              ultimate creative space where you can learn new skills, craft your
+              unique voice, and connect with a growing community of passionate
+              writers. Unlock your full potential, share your stories, and watch
+              your blog flourish like never before.
             </p>
             <input
               type="email"
@@ -122,27 +135,118 @@
     </header>
 
     <!-- Feature Section -->
-    <section class="container-fluid mt-5 pt-4 bg-white">
-      <div class="row row-cols-md-4">
-        <div class="col">
+
+    <section class="container-fluid pt-4 bg-white mb-5">
+      <p class="h3 text-success fw-bold mb-5 p-2 text-center">
+        Blogoria’s Ultimate Guide to Blogging Excellence: Voice, Plan, Grow &
+        Thrive
+      </p>
+      <div class="row" id="feature-row">
+        <div class="col-md-3">
           <div class="d-flex align-items-center">
             <ion-icon class="feature-icon" name="create"></ion-icon>
             <div class="h5 ms-2">Craft Your Unique Voice</div>
           </div>
           <p>
-            Learn how to develop a blogging style that reflects your
-            personality.
+            Learn how to develop a consistent and engaging blogging style that
+            truly reflects your unique personality.
           </p>
         </div>
-        <div class="col">hi</div>
-        <div class="col">hi</div>
-        <div class="col">hi</div>
+        <div class="col-md-3">
+          <div class="d-flex align-items-center">
+            <ion-icon class="feature-icon" name="calendar"></ion-icon>
+            <div class="h5 ms-2">Master Content Planning</div>
+          </div>
+          <p>
+            Plan and organize your blog content like a pro using editorial
+            calendars, topic clusters, and keyword strategies.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <div class="d-flex align-items-center">
+            <ion-icon class="feature-icon" name="people"></ion-icon>
+            <div class="h5 ms-2">Grow Your Reader Community</div>
+          </div>
+          <p>
+            Engage with your audience and build a loyal reader base through
+            comments, newsletters, and social sharing.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <div class="d-flex align-items-center">
+            <ion-icon class="feature-icon" name="trending-up"></ion-icon>
+            <div class="h5 ms-2">Stay Ahead with Trends</div>
+          </div>
+          <p>
+            Keep your blog fresh and engaging by following trends, using new
+            tools, and applying smart SEO tactics.
+          </p>
+        </div>
       </div>
     </section>
 
+    <!-- Blogoria Highlights -->
+
+    <p class="h2 fw-bold p-3 text-success mt-5 text-center">
+      Unlock Your Blogging Potential- Create, Connect, and Convert
+    </p>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <!-- image -->
+
+            <div class="col-md-4 rounded-4" id="hilights-img-container">
+              <img
+                src="./img/images/image-3.jpg"
+                alt="hilights image"
+                id="hilights-img"
+                class="rounded-4"
+              />
+            </div>
+
+            <!-- content -->
+            <div class="col-md-8 mb-5 mt-3">
+              <p class="h1 text-info fw-bold" id="hilights-headding">
+                Discover Your Blogging Power
+              </p>
+              <p class="text-muted mb-5">
+                Ready to transform your blog into something extraordinary? Our
+                ebook, “Blog Mastery,” gives you all the essential guidance to
+                grow and succeed.
+              </p>
+              <ul class="list-group">
+                <li class="list-item mb-4">
+                  <p class="h5 fw-bold">Express Your True Voice</p>
+                  <p>
+                    Learn how to craft authentic and creative posts that reflect
+                    your personal style.
+                  </p>
+                </li>
+                <li class="list-item mb-4">
+                  <p class="h5 fw-bold">Boost Your Blog’s Visibility</p>
+                  <p>
+                    Master the art of SEO to attract more visitors and increase
+                    your blog’s reach.
+                  </p>
+                </li>
+                <li class="list-item mb-4">
+                  <p class="h5 fw-bold">Turn Passion Into Profit</p>
+                  <p>
+                    Unlock various ways to monetize your blog, from affiliate
+                    partnerships to sponsored collaborations
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Scripts -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    aa
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script
       type="module"

@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: sans-serif;
 }
 
 /* Video in Header only */
@@ -26,6 +27,10 @@ header {
   position: relative;
   z-index: 1;
   color: white;
+}
+
+#main-headding {
+  letter-spacing: -2px;
 }
 
 /* Mute/Unmute Toggle */
@@ -70,4 +75,38 @@ header {
 .feature-icon {
   font-size: 30px;
   color: blue;
+}
+
+#hero-img {
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 1rem; /* matches rounded-5 */
+}
+
+@media (max-width: 550px) {
+  #hero-img {
+    max-height: 40vh;
+  }
+
+  #hero-img-container,
+  #hilights-img-container {
+    justify-content: center !important;
+  }
+
+  #hilights-img {
+    max-height: 40vh;
+    object-fit: cover;
+  }
+}
+#hilights-img {
+  max-height: 70vh;
+  object-fit: cover;
+}
+.container {
+  margin-bottom: 90px;
+  margin-top: 40px;
+}
+
+#hilights-headding {
+  letter-spacing: -2px;
 }
