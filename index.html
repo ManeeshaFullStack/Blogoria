@@ -62,12 +62,13 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
+          id="nav-button"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="nav-list">
             <li class="nav-item">
               <a class="nav-link text-white" href="index.html">Home</a>
             </li>
@@ -89,7 +90,7 @@
     </nav>
 
     <!-- Header -->
-    <header class="vh-100 d-flex align-items-center pb-5">
+    <header class="vh-100 d-flex align-items-center pb-md-4" id="hero-header">
       <div class="container">
         <div class="row align-items-center h-100">
           <div class="col-md-6">
@@ -136,46 +137,51 @@
 
     <!-- Feature Section -->
 
-    <section class="container-fluid pt-4 bg-white mb-5">
-      <p class="h3 fw-bold mb-5 p-2 text-center" style="color: #aa4ec2">
+    <section class="container-fluid pt-md-4 bg-white mb-md-5 ps-5">
+      <p
+        class="h3 fw-bold p-2 text-center mb-4"
+        style="color: #aa4ec2; margin-bottom: 70px"
+      >
         Blogoria’s Ultimate Guide to Blogging Excellence: Voice, Plan, Grow &
         Thrive
       </p>
       <div class="row" id="feature-row">
-        <div class="col-md-3">
+        <div class="col-md-3 feature-col1 mb-3">
           <div class="d-flex align-items-center">
             <ion-icon class="feature-icon" name="create"></ion-icon>
-            <div class="h5 ms-2">Craft Your Unique Voice</div>
+            <div class="h5 ms-2 feature-headding1">Craft Your Unique Voice</div>
           </div>
           <p>
             Learn how to develop a consistent and engaging blogging style that
             truly reflects your unique personality.
           </p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 feature-col2">
           <div class="d-flex align-items-center">
             <ion-icon class="feature-icon" name="calendar"></ion-icon>
-            <div class="h5 ms-2">Master Content Planning</div>
+            <div class="h5 ms-2 feature-headding2">Master Content Planning</div>
           </div>
           <p>
             Plan and organize your blog content like a pro using editorial
             calendars, topic clusters, and keyword strategies.
           </p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 feature-col3">
           <div class="d-flex align-items-center">
             <ion-icon class="feature-icon" name="people"></ion-icon>
-            <div class="h5 ms-2">Grow Your Reader Community</div>
+            <div class="h5 ms-2 feature-headding3">
+              Grow Your Reader Community
+            </div>
           </div>
           <p>
             Engage with your audience and build a loyal reader base through
             comments, newsletters, and social sharing.
           </p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 feature-col4">
           <div class="d-flex align-items-center">
             <ion-icon class="feature-icon" name="trending-up"></ion-icon>
-            <div class="h5 ms-2">Stay Ahead with Trends</div>
+            <div class="h5 ms-2 feature-headding4">Stay Ahead with Trends</div>
           </div>
           <p>
             Keep your blog fresh and engaging by following trends, using new
@@ -210,7 +216,11 @@
 
             <!-- content -->
             <div class="col-md-8 mb-5 mt-3">
-              <p class="h1 fw-bold text-info" id="hilights-headding">
+              <p
+                class="h1 fw-bold text-info"
+                id="hilights-headding"
+                style="letter-spacing: -2px"
+              >
                 Discover Your Blogging Power
               </p>
               <p class="text-info mb-5">
@@ -242,6 +252,210 @@
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about what section -->
+
+    <div class="container my-5">
+      <div class="card shadow-lg rounded-4 p-4 bg-light border-primary">
+        <div class="card-body">
+          <p class="h1 mb-2" style="letter-spacing: -1px">Monetize Your Blog</p>
+          <p class="text-muted mb-4" style="letter-spacing: 1px">
+            Turn your blog from a simple pastime into a successful online
+            enterprise
+          </p>
+          <p>With our ebook, <em>Blogoria: Monetize Your Passion.</em></p>
+
+          <hr class="custom-hr" />
+          <hr />
+
+          <ul class="list-unstyled text-dark ps-3">
+            <li class="mb-3">
+              <p class="h5 fw-bold d-flex align-items-center" style="gap: 10px">
+                <span
+                  ><ion-icon
+                    class="feature-icon"
+                    name="wallet"
+                  ></ion-icon></span
+                >Earn smartly
+              </p>
+              <p>Sponsored content, affiliate marketing & your own products.</p>
+            </li>
+            <li class="mb-3">
+              <p class="h5 fw-bold d-flex align-items-center" style="gap: 10px">
+                <span
+                  ><ion-icon class="feature-icon" name="business"></ion-icon
+                ></span>
+                Build a personal brand
+              </p>
+              <p>Secure partnerships that matter.</p>
+            </li>
+
+            <li class="mb-5">
+              <p class="h5 fw-bold d-flex align-items-center" style="gap: 10px">
+                <span
+                  ><ion-icon class="feature-icon" name="analytics"></ion-icon
+                ></span>
+                Maximize income
+              </p>
+              <p>Use proven strategies to grow your blog into a business.</p>
+            </li>
+          </ul>
+
+          <p class="text-muted mt-3">
+            Take your blog to the next level. Start today and unlock its full
+            financial potential.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- business section -->
+
+    <div class="container">
+      <div class="row p-4" style="margin-top: 80px; margin-bottom: 90px">
+        <div class="col-md-8 d-flex align-items-center">
+          <div>
+            <p class="h3 fw-bold" style="color: #862e9c">
+              Elevate Your Blogging to a Profitable Business
+            </p>
+            <p class="text-muted mb-5" style="letter-spacing: 1px">
+              Transform Your Blog into a Profitable Digital Asset
+            </p>
+            <ul class="list-group list-unstyled">
+              <li class="list-item mb-4">
+                <p
+                  class="h5 fw-bold d-flex align-items-center"
+                  style="gap: 10px"
+                >
+                  <span
+                    ><ion-icon class="feature-icon" name="cash"></ion-icon
+                  ></span>
+                  Monetize with Proven Methods
+                </p>
+                <p>
+                  Discover how to earn through sponsored content, affiliate
+                  programs, and creating your own products.
+                </p>
+              </li>
+              <li class="list-item mb-4">
+                <p
+                  class="h5 fw-bold d-flex align-items-center"
+                  style="gap: 10px"
+                >
+                  <span
+                    ><ion-icon class="feature-icon" name="trophy"></ion-icon
+                  ></span>
+                  Build a Powerful Brand & Network
+                </p>
+                <p>
+                  Learn the secrets to building a powerful brand, securing
+                  valuable partnerships, and maximizing your revenue streams.
+                </p>
+              </li>
+              <li class="list-item mb-4">
+                <p
+                  class="h5 fw-bold d-flex align-items-center"
+                  style="display: 10px"
+                >
+                  <span
+                    ><ion-icon class="feature-icon" name="flash"></ion-icon
+                  ></span>
+
+                  Start Earning from Your Passion Today
+                </p>
+                <p>
+                  Start today and unlock the financial potential of your
+                  blogging journey.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img
+            src="./img/images/image-1.jpg"
+            alt="bisiness image"
+            id="business-img"
+            class="rounded-4 p-2"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- inspiring section -->
+
+    <div class="container">
+      <div class="row p-4 mt-4" style="margin-bottom: 90px">
+        <div class="col-md-4">
+          <img
+            src="./img/images/image-2.jpg"
+            alt="bisiness image"
+            id="business-img"
+            class="rounded-4 p-2"
+          />
+        </div>
+        <div class="col-md-8 d-flex align-items-center">
+          <div>
+            <p class="h3 fw-bold" style="color: #862e9c">
+              Create Impactful Content That Resonates
+            </p>
+            <p class="text-muted mb-5" style="letter-spacing: 1px">
+              Learn how to write stories that capture attention, use
+              eye-catching visuals, and include strong calls-to-action. Build a
+              consistent and authentic voice for your blog that helps you stand
+              out from the crowd.
+            </p>
+            <ul class="list-group list-unstyled">
+              <li class="list-item mb-4">
+                <p
+                  class="h5 fw-bold d-flex align-items-center"
+                  style="gap: 10px"
+                >
+                  <span
+                    ><ion-icon class="feature-icon" name="mic"></ion-icon
+                  ></span>
+                  Own Your Distinct Voice
+                </p>
+                <p>
+                  Learn how to confidently share your thoughts and ideas in a
+                  way that’s true to you.
+                </p>
+              </li>
+              <li class="list-item mb-4">
+                <p
+                  class="h5 fw-bold d-flex align-items-center"
+                  style="gap: 10px"
+                >
+                  <span
+                    ><ion-icon class="feature-icon" name="flame"></ion-icon
+                  ></span>
+                  Ignite Your Imagination
+                </p>
+                <p>
+                  Find simple ways to stay creative and overcome writer’s block
+                  so you never run out of ideas.
+                </p>
+              </li>
+              <li class="list-item mb-4">
+                <p
+                  class="h5 fw-bold d-flex align-items-center"
+                  style="display: 10px"
+                >
+                  <span
+                    ><ion-icon class="feature-icon" name="heart"></ion-icon
+                  ></span>
+                  Connect Deeply with Readers
+                </p>
+                <p>
+                  Use proven techniques to create content that your audience
+                  relates to, enjoys, and remembers.
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
