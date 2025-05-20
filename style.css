@@ -88,6 +88,10 @@ header {
     max-height: 40vh;
   }
 
+  #hero-header {
+    padding-bottom: 50px;
+  }
+
   #hero-img-container,
   #hilights-img-container {
     justify-content: center !important;
@@ -97,7 +101,24 @@ header {
     max-height: 40vh;
     object-fit: cover;
   }
+
+  #business-img {
+    max-height: 40vh;
+    object-fit: cover;
+    justify-self: center;
+  }
+  #nav-button {
+    background-color: white;
+  }
+  #nav-list {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+  }
 }
+
 #hilights-img {
   max-height: 70vh;
   object-fit: cover;
@@ -109,4 +130,31 @@ header {
 
 #hilights-headding {
   letter-spacing: -2px;
+}
+
+.custom-hr {
+  border: none;
+  height: 4px;
+  background-color: #862e9c;
+  border-radius: 2px;
+  margin: 1rem 0;
+  opacity: 5;
+}
+
+#business-img {
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+.feature-col {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.feature-col1:hover,
+.feature-col2:hover,
+.feature-col3:hover,
+.feature-col4:hover {
+  transform: translateY(-5px); /* move upward */
+  background-color: #f3d9fa;
+  border-radius: 10px;
 }

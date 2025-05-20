@@ -52,7 +52,45 @@ $(window).on("scroll", function () {
   }
 });
 
-let sectionHilights = $("#hilights-section");
-sectionHilights.on("hover", function () {
-  sectionHilights.addClass("modal");
-});
+let featureHeadding1 = $(".feature-headding1");
+let featureHeadding2 = $(".feature-headding2");
+let featureHeadding3 = $(".feature-headding3");
+let featureHeadding4 = $(".feature-headding4");
+
+let featureColumn1 = $(".feature-col1");
+let featureColumn2 = $(".feature-col2");
+let featureColumn3 = $(".feature-col3");
+let featureColumn4 = $(".feature-col4");
+
+featureColumn1.hover(
+  function () {
+    featureHeadding1.addClass("fw-bold");
+  },
+  function () {
+    featureHeadding1.removeClass("fw-bold");
+  }
+);
+featureColumn2.hover(
+  function () {
+    featureHeadding2.addClass("fw-bold");
+  },
+  function () {
+    featureHeadding2.removeClass("fw-bold");
+  }
+);
+featureColumn3.hover(
+  function () {
+    featureHeadding3.addClass("fw-bold");
+  },
+  function () {
+    featureHeadding3.removeClass("fw-bold");
+  }
+);
+featureColumn4.hover(
+  function () {
+    featureHeadding4.addClass("fw-bold");
+  },
+  function () {
+    featureHeadding4.removeClass("fw-bold");
+  }
+);
