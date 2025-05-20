@@ -83,6 +83,8 @@ header {
   border-radius: 1rem; /* matches rounded-5 */
 }
 
+/* ---------------------------------------------------------------------------------------- */
+
 @media (max-width: 550px) {
   #hero-img {
     max-height: 40vh;
@@ -107,6 +109,10 @@ header {
     object-fit: cover;
     justify-self: center;
   }
+  #form-img {
+    display: none;
+  }
+
   #nav-button {
     background-color: white;
   }
@@ -119,6 +125,7 @@ header {
   }
 }
 
+/* ------------------------------------------------------------------------------------------- */
 #hilights-img {
   max-height: 70vh;
   object-fit: cover;
@@ -146,6 +153,11 @@ header {
   object-fit: cover;
 }
 
+#form-img {
+  max-height: 50vh;
+  object-fit: cover;
+}
+
 .feature-col {
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -157,4 +169,14 @@ header {
   transform: translateY(-5px); /* move upward */
   background-color: #f3d9fa;
   border-radius: 10px;
+}
+
+input::placeholder {
+  color: #dee2e6;
+  font-style: italic;
+}
+
+#form-row {
+  background-image: url("./img/images/background-1.jpg");
+  background-size: cover;
 }

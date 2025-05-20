@@ -94,3 +94,21 @@ featureColumn4.hover(
     featureHeadding4.removeClass("fw-bold");
   }
 );
+
+let heroButton = $("#hero-button");
+let heroInput = $("#hero-input");
+
+let buttonPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+heroButton.click(function () {
+  let inputValue = heroInput.val().trim();
+
+  if (inputValue === "") {
+    alert("Empty field can't be submitted");
+  } else if (buttonPattern.test(inputValue)) {
+    alert("Succeeded");
+  } else {
+    alert("Invalid input");
+    heroInput.val(""); // Clear the input
+  }
+});
