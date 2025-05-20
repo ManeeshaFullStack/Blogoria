@@ -123,6 +123,16 @@ header {
     justify-content: end;
     gap: 10px;
   }
+
+  .container {
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+
+  #footer-block {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* ------------------------------------------------------------------------------------------- */
@@ -179,4 +189,15 @@ input::placeholder {
 #form-row {
   background-image: url("./img/images/background-1.jpg");
   background-size: cover;
+}
+
+.otherWork-link:hover {
+  text-decoration: underline !important;
+  color: #862e9c !important;
+}
+
+.testimonial-img {
+  width: 30%;
+  height: 30%;
+  object-fit: cover;
 }

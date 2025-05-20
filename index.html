@@ -42,7 +42,7 @@
       id="main-nav"
     >
       <div class="container-fluid">
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="40px"
@@ -73,12 +73,12 @@
               <a class="nav-link text-white" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#details">Details</a>
+              <a class="nav-link text-white" href="#Details">Details</a>
             </li>
             <li class="nav-item">
               <a
                 class="btn btn-primary text-white px-3 ms-lg-2 rounded-4"
-                href="#contactform"
+                href="#footer-block"
                 role="button"
               >
                 Contact
@@ -137,7 +137,7 @@
 
     <!-- Feature Section -->
 
-    <section class="container-fluid pt-md-4 bg-white mb-md-5 ps-5">
+    <section class="container-fluid pt-md-4 bg-white mb-md-5 ps-5" id="Details">
       <p
         class="h3 fw-bold p-2 text-center mb-4"
         style="color: #aa4ec2; margin-bottom: 70px"
@@ -389,7 +389,7 @@
     <!-- inspiring section -->
 
     <div class="container">
-      <div class="row p-4 mt-4" style="margin-bottom: 90px">
+      <div class="row p-4 mt-md-4 mb-md-4">
         <div class="col-md-4">
           <img
             src="./img/images/image-2.jpg"
@@ -461,9 +461,68 @@
       </div>
     </div>
 
+    <!-- Testimonials section -->
+
+    <section class="container bg-white ps-5">
+      <p
+        class="h2 fw-bold p-2 text-center mb-4"
+        style="color: #aa4ec2; margin-bottom: 70px"
+      >
+        Hear From Our Happy Readers!
+      </p>
+      <div class="row mb-md-3">
+        <div class="col-md-4 py-3 text-center px-3">
+          <div class="d-flex justify-content-center align-items-center mb-3">
+            <img
+              class="testimonial-img rounded-circle"
+              src="./img/images/testimonial-img-1.jpg"
+              alt="Emily Johnson image"
+            />
+          </div>
+          <p>
+            This ebook completely changed the way I approach blogging. The
+            actionable tips and expert advice helped me grow my audience faster
+            than I imagined. Highly recommended!
+          </p>
+          <p>Emily Johnson, Seattle, WA</p>
+        </div>
+        <div class="col-md-4 py-3 text-center px-3">
+          <div class="d-flex justify-content-center align-items-center mb-3">
+            <img
+              class="testimonial-img rounded-circle"
+              src="./img/images/testimonial-img-3.jpg"
+              alt="Raj Patel image"
+            />
+          </div>
+          <p>
+            I’m so thankful for this guide! It gave me the confidence and tools
+            to create meaningful content and engage with my readers
+            consistently. Truly a must-have for any blogger.
+          </p>
+          <p>Raj Patel, Austin, TX</p>
+        </div>
+
+        <div class="col-md-4 py-3 text-center px-3">
+          <div class="d-flex justify-content-center align-items-center mb-3">
+            <img
+              class="testimonial-img rounded-circle"
+              src="./img/images/testimonial-img-2.jpg"
+              alt="Samantha Lee image"
+            />
+          </div>
+          <p>
+            An invaluable resource packed with practical blogging knowledge. It
+            inspired me to be more creative and helped me build a genuine
+            connection with my followers.
+          </p>
+          <p>Samantha Lee, Denver, CO</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Download section -->
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="margin-top: 140px">
       <div class="row p-4" style="margin-top: 80px" id="form-row">
         <div class="col-md-8 d-flex align-items-center ps-4">
           <div>
@@ -494,9 +553,10 @@
                   id="hero-input"
                 />
                 <button
-                  class="btn btn-primary rounded-0 rounded-end"
+                  class="btn rounded-0 rounded-end text-light"
                   type="button"
                   id="hero-button"
+                  style="background-color: #862e9c"
                 >
                   Download
                 </button>
@@ -515,6 +575,99 @@
         </div>
       </div>
     </div>
+
+    <!-- footer section -->
+
+    <footer class="bg-dark text-light pt-5 pb-4" id="footer-block">
+      <div class="container text-center text-md-start">
+        <div class="row p-3 justify-content-center">
+          <!-- Brand & About -->
+          <div class="col-md-4 mb-4">
+            <a
+              href="index.html"
+              class="text-decoration-none d-flex justify-content-center justify-content-md-start align-items-center"
+            >
+              <h5
+                class="text-uppercase fw-bold h1 text-light d-flex align-items-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="60px"
+                  viewBox="0 -960 960 960"
+                  width="60px"
+                  fill="#4dabf7"
+                >
+                  <path
+                    d="M480-160q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q58 0 113.5 15T480-740v506q51-33 107-49.5T700-300q36 0 78.5 7t81.5 29v-505q9.89 3.75 19.44 7.87Q889-757 898-752q10 6 16 15.68 6 9.67 6 20.32v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59Zm60-167v-353l260-260v387L540-327Zm-120 63v-439q-34-19-79-28t-81-9q-47 0-87.5 10T100-704.47V-264q35-17 75.5-26.5t85-9.5q44.5 0 84.5 9.5t75 26.5Zm0 0v-439 439Z"
+                  />
+                </svg>
+                Blogoria
+              </h5>
+            </a>
+          </div>
+
+          <!-- Other Projects -->
+          <div class="col-md-4 mb-4">
+            <h6 class="text-uppercase fw-bold">My Other Works</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="https://maneeshafullstack.github.io/Homlyfood/src/index.html"
+                  class="text-decoration-none text-light otherWork-link d-block"
+                  >Homlyfood</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://maneeshafullstack.github.io/FinTrack/src/pages/index.html"
+                  class="text-decoration-none text-light otherWork-link d-block"
+                  >FinTrack</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://maneeshafullstack.github.io/SmartToDo/"
+                  class="text-decoration-none text-light otherWork-link d-block"
+                  >SmartToDo</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- GitHub and Contact -->
+          <div class="col-md-4 mb-4">
+            <h6 class="text-uppercase fw-bold">Connect</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="https://github.com/ManeeshaFullStack"
+                  class="text-decoration-none text-light otherWork-link d-block"
+                  target="_blank"
+                >
+                  <i class="bi bi-github me-2"></i>GitHub Profile
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:sangam.maneesha@gmail.com"
+                  class="text-decoration-none text-light otherWork-link d-block"
+                >
+                  <i class="bi bi-envelope me-2"></i>Email Me
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="border-secondary" />
+
+        <!-- Copyright -->
+        <div class="text-center text-muted small">
+          &copy; 2025 Blogoria by Maneesha Sangam. All rights reserved.
+        </div>
+      </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
